@@ -1,7 +1,12 @@
+import BusinessContextProvider from './context/BusinessContext';
 import Home from './pages/Home';
 
 function App() {
-  return <Home />;
+  return (
+    <BusinessContextProvider>
+      <Home />
+    </BusinessContextProvider>
+  );
 }
 
 export default App;

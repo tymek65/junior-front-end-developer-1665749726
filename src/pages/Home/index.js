@@ -1,12 +1,16 @@
+import Main from '../../components/Main';
 import Navbar from '../../components/Navbar';
 import SideBar from '../../components/SideBar';
 import styles from './Home.module.sass';
 
 const Home = () => {
   return (
-    <div className={styles.homeWrap}>
+    <div className={styles.siteWrap}>
       <Navbar />
-      <SideBar />
+      <div className={styles.homeWrap}>
+        <SideBar />
+        <Main />
+      </div>
     </div>
   );
 };
