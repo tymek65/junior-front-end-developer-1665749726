@@ -1,27 +1,16 @@
 import { ReactComponent as Arrow } from '../../assets/Arrow.svg';
 import { ReactComponent as Checkmark } from '../../assets/Checkmark.svg';
 import { ReactComponent as Lock } from '../../assets/Lock.svg';
+import classNames from 'classnames';
 import styles from './Task.module.sass';
 
 const TaskStatusIcon = ({ status }) => {
-  if (status === 'completed')
-    return (
-      <div className={`${styles.task__icon} ${styles.completed}`}>
-        <Checkmark />
-      </div>
-    );
-  else if (status === 'active')
-    return (
-      <div className={`${styles.task__icon} ${styles.active}`}>
-        <Arrow />
-      </div>
-    );
-  else
-    return (
-      <div className={`${styles.task__icon} ${styles.blocked}`}>
-        <Lock />
-      </div>
-    );
+  const icons = {
+    completed: <Checkmark />,
+    active: <Arrow />,
+    blocked: <Lock />,
+  };
+  return <div className={classNames(styles.task__icon, [styles[`task__icon--${status}`]])}>{icons[status]}</div>;
 };
 
 const Task = ({ task: { name, status } }) => {

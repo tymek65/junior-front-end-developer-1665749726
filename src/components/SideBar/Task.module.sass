@@ -4,7 +4,7 @@
     align-items: center
     font-weight: 500
     font-size: 14px
-    .task__icon
+    &__icon
         border-radius: 2px
         margin-right: 10px
         display: flex
@@ -12,11 +12,11 @@
         align-items: center
         height: 16px
         width: 16px
-        &.completed
+        &--completed
             background-color: #EDF9F2
-        &.active
-            background-color: #0165FF
-        &.blocked
+        &--active
+            background-color: var(--blue)
+        &--blocked
             background-color: #F4F5F7
         svg
             height: 10px
