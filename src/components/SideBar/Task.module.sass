@@ -1,9 +1,19 @@
 .task
-    margin: 15px 0
+    padding: 15px 10px
     display: flex
     align-items: center
     font-weight: 500
     font-size: 14px
+    text-decoration: none
+    color: #242325
+    border-radius: 12px
+    transition: background-color 0.3s ease-in-out
+    &--active
+        font-weight: 600
+    &--blocked
+        color: #AEB5C1
+        pointer-events: none
+
     &__icon
         border-radius: 2px
         margin-right: 10px

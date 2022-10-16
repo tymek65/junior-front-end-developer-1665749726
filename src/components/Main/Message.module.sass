@@ -1,6 +1,7 @@
 .message
     flex: 4
     padding: 20px 30px
+    animation: flexGrow 0.5s ease-out
     &__title
         font-weight: 600
         font-size: 23px
@@ -29,3 +30,9 @@
     &__content
         margin-top: 4px
         font-size: 14px
+
+@keyframes flexGrow
+    0%
+        flex: 0
+    100%
+        flex: 4

@@ -30,9 +30,16 @@ export const tasks = [
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis temporibus laboriosam quidem eum nostrum a non maiores quasi quis, molestias hic incidunt at consectetur blanditiis omnis laborum voluptatem. Illum!',
       },
       {
+        author: 'Olga Nelson',
+        title: 'Application has been accepted',
+        created_at: new Date('2022-10-06T09:15:00'),
+        content:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis temporibus laboriosam quidem eum nostrum a non maiores quasi quis, molestias hic incidunt at consectetur blanditiis omnis laborum voluptatem. Illum!',
+      },
+      {
         author: 'Kristen Aniston',
         title: 'New sprint, tasks, and intro information',
-        created_at: new Date('2022-10-5T21:43:00'),
+        created_at: new Date('2022-10-05T21:43:00'),
         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe animi ipsa modi totam, alias vitae vero, quisquam ad quaerat eligendi ut itaque.',
       },
     ],

@@ -3,9 +3,11 @@ import { useContext } from 'react';
 import { BusinessContext } from '../../context/BusinessContext';
 import { getDateString } from '../../utils/messagesHelpers';
 import avatar2 from '../../assets/avatar2.png';
+import { useParams } from 'react-router-dom';
 const Message = () => {
   const tasks = useContext(BusinessContext);
-  const { author, created_at, title, content } = tasks[0].context[0];
+  const { id, messageId } = useParams();
+  const { author, created_at, title, content } = tasks[id ?? 0].context[messageId];
   const { date, time } = getDateString(created_at, 'long');
   return (
     <div className={styles.message}>

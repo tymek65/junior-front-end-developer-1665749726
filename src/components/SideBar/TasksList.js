@@ -7,7 +7,7 @@ const TasksList = () => {
   return (
     <div className={styles.tasksWrap}>
       {tasks.map((task, index) => (
-        <Task key={index} task={task} />
+        <Task key={index} task={task} index={index} />
       ))}
     </div>
   );
