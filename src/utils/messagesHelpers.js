@@ -29,8 +29,7 @@ export const truncateText = (text) => {
   else return text;
 };
 
-export const getDateString = (dateString, style) => {
-  const date = new Date(dateString);
+export const getDateString = (date, style) => {
   const timeAgo = countTimeBetweenDates(date);
   const day = style === 'short' ? date.getDate() : convertToOrdinal(date.getDate());
   const month = date.toLocaleString('en-US', { month: style });

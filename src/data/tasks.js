@@ -12,14 +12,14 @@ export const tasks = [
       {
         author: 'Olga Nelson',
         title: 'Application has been accepted',
-        created_at: '2022-10-14T14:20:00',
+        created_at: new Date('2022-10-14T14:20:00'),
         content:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis temporibus laboriosam quidem eum nostrum a non maiores quasi quis, molestias hic incidunt at consectetur blanditiis omnis laborum voluptatem. Illum!',
       },
       {
         author: 'Kristen Aniston',
         title: 'New sprint, tasks, and intro information',
-        created_at: '2022-10-13T12:13:00',
+        created_at: new Date('2022-10-13T12:13:00'),
         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe animi ipsa modi totam, alias vitae vero, quisquam ad quaerat eligendi ut itaque.',
       },
     ],
@@ -31,21 +31,21 @@ export const tasks = [
       {
         author: 'Kristen Aniston',
         title: 'Application has been accepted 🎉 🙌',
-        created_at: '2022-10-11T10:20:00',
+        created_at: new Date('2022-10-11T10:20:00'),
         content:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis temporibus laboriosam quidem eum nostrum a non maiores quasi quis, molestias hic incidunt at consectetur blanditiis omnis laborum voluptatem. Illum!',
       },
       {
         author: 'Olga Nelson',
         title: 'Application has been accepted',
-        created_at: '2022-10-06T09:15:00',
+        created_at: new Date('2022-10-06T09:15:00'),
         content:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis temporibus laboriosam quidem eum nostrum a non maiores quasi quis, molestias hic incidunt at consectetur blanditiis omnis laborum voluptatem. Illum!',
       },
       {
         author: 'Kristen Aniston',
         title: 'New sprint, tasks, and intro information',
-        created_at: '2022-10-05T21:43:00',
+        created_at: new Date('2022-10-05T21:43:00'),
         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe animi ipsa modi totam, alias vitae vero, quisquam ad quaerat eligendi ut itaque.',
       },
     ],
@@ -57,14 +57,14 @@ export const tasks = [
       {
         author: 'Olga Nelson',
         title: 'Application has been accepted',
-        created_at: '2022-10-03T12:22:00',
+        created_at: new Date('2022-10-03T12:22:00'),
         content:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis temporibus laboriosam quidem eum nostrum a non maiores quasi quis, molestias hic incidunt at consectetur blanditiis omnis laborum voluptatem. Illum!',
       },
       {
         author: 'Kristen Aniston',
         title: 'New sprint, tasks, and intro information',
-        created_at: '2022-10-05T16:37:00',
+        created_at: new Date('2022-10-05T16:37:00'),
         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe animi ipsa modi totam, alias vitae vero, quisquam ad quaerat eligendi ut itaque.',
       },
     ],
@@ -76,14 +76,14 @@ export const tasks = [
       {
         author: 'Olga Nelson',
         title: 'Application has been accepted',
-        created_at: '2022-09-09T20:20:00',
+        created_at: new Date('2022-09-09T20:20:00'),
         content:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis temporibus laboriosam quidem eum nostrum a non maiores quasi quis, molestias hic incidunt at consectetur blanditiis omnis laborum voluptatem. Illum!',
       },
       {
         author: 'Kristen Aniston',
         title: 'New sprint, tasks, and intro information',
-        created_at: '2022-09-10T19:13:00',
+        created_at: new Date('2022-09-10T19:13:00'),
         content:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, illo aliquam eligendi magni suscipit labore! Hic vero, harum assumenda laudantium labore ea quidem sed ullam! Inventore nemo temporibus cum totam voluptates assumenda saepe alias sed, cumque iusto eum tenetur. Optio, cupiditate expedita, nisi incidunt rem dignissimos harum facere culpa atque laboriosam ut. Asperiores molestiae enim quos cumque velit quasi magnam nisi unde repellat at nihil totam, quam facere obcaecati quas perspiciatis minima doloremque numquam atque eum ducimus quisquam reprehenderit quis? Totam soluta repudiandae delectus quasi vero laboriosam exercitationem, recusandae a, impedit natus beatae voluptates necessitatibus, fugit aperiam dolores voluptas cumque?',
       },
@@ -96,14 +96,14 @@ export const tasks = [
       {
         author: 'Olga Nelson',
         title: 'Application has been accepted',
-        created_at: '2022-10-14T14:20:00',
+        created_at: new Date('2022-10-14T14:20:00'),
         content:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis temporibus laboriosam quidem eum nostrum a non maiores quasi quis, molestias hic incidunt at consectetur blanditiis omnis laborum voluptatem. Illum!',
       },
       {
         author: 'Kristen Aniston',
         title: 'New sprint, tasks, and intro information',
-        created_at: '2022-10-13T12:13:00',
+        created_at: new Date('2022-10-13T12:13:00'),
         content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe animi ipsa modi totam, alias vitae vero, quisquam ad quaerat eligendi ut itaque.',
       },
     ],
