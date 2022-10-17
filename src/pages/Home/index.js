@@ -3,9 +3,11 @@ import SideBar from '../../components/SideBar';
 import Footer from '../../components/Footer';
 import styles from './Home.module.sass';
 import { Outlet, useNavigate, useParams } from 'react-router-dom';
-import { useEffect } from 'react';
-import { tasks } from '../../data/tasks';
+import { useEffect, useContext } from 'react';
+import { BusinessContext } from '../../context/BusinessContext';
+
 const Home = () => {
+  const tasks = useContext(BusinessContext);
   const navigate = useNavigate();
   const { id } = useParams();
   useEffect(() => {
