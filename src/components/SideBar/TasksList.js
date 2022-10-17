@@ -1,9 +1,7 @@
 import styles from './TasksList.module.sass';
 import Task from './Task';
-import { useContext } from 'react';
-import { BusinessContext } from '../../context/BusinessContext';
+import { tasks } from '../../data/tasks';
 const TasksList = () => {
-  const tasks = useContext(BusinessContext);
   return (
     <div className={styles.tasksWrap}>
       {tasks.map((task, index) => (

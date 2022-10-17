@@ -1,13 +1,22 @@
-.mainWrap
+.main
     display: flex
     flex: 3
-    margin-left: 16px
+    margin-top: 16px
     flex-direction: column
+    &__headerWrap
+        border-radius: 12px 12px 0 0
+        background-color: var(--white)
+        padding: 0 48px
+    @media (min-width: 1100px)
+        margin-left: 16px
+        margin-top: 0px
 .inbox
     margin-top: 1px
     background: var(--white)
     border-radius: 0 0 12px 12px
     flex: 1
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1)
-    flex-direction: row
+    flex-direction: column
     display: flex
+    @media (min-width: 875px)
+        flex-direction: row
