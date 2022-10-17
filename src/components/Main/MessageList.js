@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import { getDateString, truncateText } from '../../utils/messagesHelpers';
 import classNames from 'classnames';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { tasks } from '../../data/tasks';
-import { useState } from 'react';
+import { useState, useLayoutEffect, useContext } from 'react';
+import { BusinessContext } from '../../context/BusinessContext';
 const MessageList = () => {
+  const tasks = useContext(BusinessContext);
   let { id } = useParams();
   const [messageStatus, setMessageStatus] = useState({});
   return (
@@ -23,7 +24,7 @@ const MessageThumbnail = ({ message, index, messageStatus, setMessageStatus }) =
   const time = getDateString(message.created_at, 'short');
   const status = parseInt(messageId) === index ? 'active' : !messageStatus?.[id]?.includes(index) ? 'new' : 'read';
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!messageId) {
       const index = messageStatus?.[id]?.[0];
       if (index !== undefined) {
