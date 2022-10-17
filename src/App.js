@@ -2,17 +2,20 @@ import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Message from './components/Main/Message';
 import Main from './components/Main';
+import BusinessContextProvider from './context/BusinessContext';
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="task/:id" element={<Main />}>
-            <Route path="message/:messageId" element={<Message />} />
+    <BusinessContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route path="task/:id" element={<Main />}>
+              <Route path="message/:messageId" element={<Message />} />
+            </Route>
           </Route>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </BusinessContextProvider>
   );
 }
 

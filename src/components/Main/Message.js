@@ -2,8 +2,10 @@ import styles from './Message.module.sass';
 import { getDateString } from '../../utils/messagesHelpers';
 import avatar2 from '../../assets/avatar2.png';
 import { useParams } from 'react-router-dom';
-import { tasks } from '../../data/tasks';
+import { useContext } from 'react';
+import { BusinessContext } from '../../context/BusinessContext';
 const Message = () => {
+  const tasks = useContext(BusinessContext);
   const { id, messageId } = useParams();
   const { author, created_at, title, content } = tasks[id].context[messageId];
   const { date, time } = getDateString(created_at, 'long');

@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import { getDateString, truncateText } from '../../utils/messagesHelpers';
 import classNames from 'classnames';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { tasks } from '../../data/tasks';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { BusinessContext } from '../../context/BusinessContext';
 const MessageList = () => {
+  const tasks = useContext(BusinessContext);
   let { id } = useParams();
   const [messageStatus, setMessageStatus] = useState({});
   return (
