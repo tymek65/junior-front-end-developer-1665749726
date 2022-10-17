@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { getDateString, truncateText } from '../../utils/messagesHelpers';
 import classNames from 'classnames';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { useState, useLayoutEffect, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { BusinessContext } from '../../context/BusinessContext';
 const MessageList = () => {
   const tasks = useContext(BusinessContext);
@@ -24,7 +24,7 @@ const MessageThumbnail = ({ message, index, messageStatus, setMessageStatus }) =
   const time = getDateString(message.created_at, 'short');
   const status = parseInt(messageId) === index ? 'active' : !messageStatus?.[id]?.includes(index) ? 'new' : 'read';
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (!messageId) {
       const index = messageStatus?.[id]?.[0];
       if (index !== undefined) {
