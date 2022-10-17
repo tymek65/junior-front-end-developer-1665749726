@@ -1,13 +1,12 @@
 .task
-    padding: 15px 10px
+    padding: 10px
     display: flex
     align-items: center
     font-weight: 500
     font-size: 14px
     text-decoration: none
-    color: #242325
+    color: var(--black)
     border-radius: 12px
-    transition: background-color 0.3s ease-in-out
     &--active
         font-weight: 600
     &--blocked
@@ -22,12 +21,13 @@
         align-items: center
         height: 16px
         width: 16px
+        aspect-ratio: 1
         &--completed
             background-color: #EDF9F2
         &--active
             background-color: var(--blue)
         &--blocked
-            background-color: #F4F5F7
+            background-color: var(--grey-bg)
         svg
             height: 10px
             width: 10px
